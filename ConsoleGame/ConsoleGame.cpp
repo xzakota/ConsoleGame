@@ -1,4 +1,4 @@
-#include <csignal>
+﻿#include <csignal>
 #include "SnakeGame.h"
 #include "C2048Game.h"
 
@@ -13,12 +13,18 @@ void stopGame(int signum) {
         game->stop(signum);
     }
     cout << "\nExit code: " << signum << "\n";
+    system(STOP_CMD_TEXT);
     delete homeCanvas;
     exit(signum);
 }
 
 // 主函数
 int main() {
+    #ifdef _MSC_VER
+    SetConsoleTitle(TEXT("Console Game"));
+    #endif // _MSC_VER
+
+
     // 处理程序被 Ctrl + C 终止
     signal(SIGINT, stopGame);
 

@@ -1,4 +1,4 @@
-#include "Game.h"
+﻿#include "Game.h"
 
 Game::Game() {
     gameCanvas = new Canvas();
@@ -9,6 +9,8 @@ Game::~Game() {
 }
 
 void Game::welcome(bool isAutoStart) {
+    system(START_CMD_TEXT);
+
     gameCanvas->clrscr();
     gameCanvas->draw(DEFAULT_WALL_CHAR, false);
 

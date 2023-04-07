@@ -27,6 +27,9 @@
     <ClCompile Include="SnakeGame.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="C2048Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Canvas.h">
@@ -38,5 +41,27 @@
     <ClInclude Include="SnakeGame.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="C2048Game.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameRes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyControl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="launch.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ConsoleGame.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

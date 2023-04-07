@@ -1,19 +1,25 @@
-#ifndef _COMMON_H_
+﻿#ifndef _COMMON_H_
 #define _COMMON_H_
 
 #include <iostream>
+#include <ctime>
+#include <string>
 #include <cstdarg>
 
 #ifdef __GNUC__
 #include "conio.h"
 #define Sleep(x) usleep(x * 1E3)
 #define CLEAR_CMD_TEXT "clear"
+#define START_CMD_TEXT ""
+#define STOP_CMD_TEXT "echo \"按回车键退出...\";read -s -n 1"
 #endif // __GNUC__
 
 #ifdef _MSC_VER
 #include <Windows.h>
 #include <conio.h>
 #define CLEAR_CMD_TEXT "cls"
+#define START_CMD_TEXT "chcp 65001"
+#define STOP_CMD_TEXT "pause"
 #endif // _MSC_VER
 
 using namespace std;
